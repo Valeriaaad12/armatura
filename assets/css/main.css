@@ -1,0 +1,218 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+    background: #d8dff3;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main {
+    flex: 1 1 auto;
+}
+@font-face{
+    font-family:'Montserrat' ;
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+@font-face{
+    font-family:'Montserrat1' ;
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+/*HEADER*/
+
+.nav-link{
+    text-decoration: green wavy underline;
+}
+
+.navbar-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: 'Montserrat1';
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 60px;
+    z-index: 10;
+    margin-left: 30px;
+}
+.navbar-menu li a {
+    color: #8a7ff0;
+    opacity: 1.1;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: 'Montserrat';
+    display: block;
+}
+.navbar-menu li a:hover {
+    color: #070592;
+}
+.header-top {
+    box-shadow: 0 4px 10px rgb(2, 20, 185);
+    margin-bottom: 20px;
+}
+.done1{
+    display: none;
+    background: linear-gradient(45deg, #f0ecea, #c5d2f8);
+    color: #8a7ff0;
+    z-index: 1;
+    border: 1px solid #8a7ff0;
+    border-radius: 8px;
+    margin-top: 40px;
+    float: right;
+    position: relative;
+    box-shadow: none;
+    font-family: 'Montserrat'; 
+    z-index: 100;
+}
+.dropdown-menu{
+    background-color: #c3beee;
+}
+.dropdown-item{
+    background-color: #c3beee;
+    color: white;
+}
+@media (max-width: 990px) {
+    .navbar-menu     { display: none; }
+    .icon-acount { display: none; }
+    .done1 {display: inline-block; margin-top: 55px; float: left; margin-left: 85%; margin-bottom: 10px;}
+    .img-thumbnail {width: 100vw;}
+}
+@media (max-width: 760px) {
+    .navbar-menu     { display: none; }
+    .done1 {display: inline-block; margin-top: 0; float: left; margin-left: 0; margin-bottom: 10px;}
+    .textsmall { font-size: 10px;}
+    .custom-btn { max-width: 100px; max-height: 40px;}
+    .text123 { display: none;}
+    .img-thumbnail {width: 100vw;}
+}
+/*HEADER*/
+
+/*ФОРМА РЕГИСТРАЦИЯ/АВТОРИЗАЦИЯ*/
+.reg_form a{
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #5c5b5b;
+    text-decoration: none;
+    margin-left: 60px;
+}
+.reg_form a:hover{
+    transition: all .3s;
+    margin-left: 55px;
+}
+
+/*ФОРМА РЕГИСТРАЦИЯ/АВТОРИЗАЦИЯ*/
+
+/* MAIN INDEX */
+.custom-btn {
+    font-size: 1.0vw;
+    width: 200px;
+    height: 60px;
+    color: #fffefe;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 700px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    font-family: 'Montserrat1';
+}
+.btn-2 {
+    background: rgb(18, 33, 163);
+    background: linear-gradient(0deg, rgb(7, 24, 177) 0%, rgba(129,5,240,1) 100%);
+    border: none; 
+}
+.btn-2:hover {
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(255, 255, 255, 0.5), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+/* MAIN INDEX */
+
+/* MAIN PRODUCT */
+.product-card{
+    transition: all .3s;
+    border: 1px solid  rgb(2, 20, 185);
+    background-color: rgb(236, 229, 213);
+    position: relative;
+    font-family: 'Montserrat';
+}
+.product-card:hover{
+    box-shadow: 0 10px 20px -15px rgba(2, 20, 185, 0.75);
+}
+.product-thum{
+    text-align: center;
+}
+.product-thumb img{
+    max-height: 250px;
+}
+.product-details{
+    padding: 10px 20px;
+}
+.product-details h4{
+    font-size: 1rem;
+    height: 70px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-family: 'Montserrat';
+}
+/* MAIN PRODUCT */
+
+/* MAIN PROIZVODSTVO */
+.about-us{
+    display: flex;
+    font-family: 'Montserrat';
+}
+.between{
+    margin: 0;
+}
+/* MAIN PROIZVODSTVO */
+
+/* FOOTER */
+footer{
+    background-color: #7e8aad;
+    padding: 40px 20px;
+    color: white;
+    font-family: 'Montserrat';
+}
+footer h6{
+    margin-bottom: 20px;
+}
+/* FOOTER */
+#top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#8a7ff0;
+    opacity: .5;
+    color: rgb(2, 20, 185);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 25px;
+    transition: all .5s;
+    z-index: 10;
+    display: none;
+}
+#top:hover{
+    opacity: 1;
+}
